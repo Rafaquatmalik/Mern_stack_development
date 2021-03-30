@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include partials/head %>
+    <style>
+        table,
+        th,
+        tr,
+        td {
+            border-collapse: collapse;
+            border: 1px solid #d3d3d3;
+        }
+    </style>
+</head>
+
+
+<body>
+    <% include partials/menu %>
+        <div class="container-fluid bg-3 text-center">
+            <h3>
+                <%= page %>
+            </h3><br>
+            <div class="row">
+                <form action="view" method="POST">
+                <table class="container-fluid bg-3 text-center">
+                    <tr>
+                        <td>Product ID :<input type="text" name="_id" placeholder="ProductID" ></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="search"></td>
+                    </tr>
+
+                </table>
+                </form>
+            </div>
+        </div>
+
+
+        </div>
+        </div>
+
+</body>
+<% include partials/script %>
+
+
+</html>
