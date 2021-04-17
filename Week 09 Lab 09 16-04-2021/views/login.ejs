@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include partials/head %>
+</head>
+<style>
+     table,th,tr,td{
+		  border-collapse: collapse;
+		  border: 1px solid #d3d3d3;
+	  }
+</style>
+
+<body>
+    <% include partials/menu %>
+        <div class="container-fluid bg-3 text-center">
+            <h3>
+                <%= page %>
+            </h3><br>
+            <div class="row" >
+             
+                <form action="./login" method="POST" >
+                    <table class='table table-striped table-responsive-md btm-table'>
+                        <tr>
+                            <th>USER NAME : </th>
+                            <td><input type="text" name="username" placeholder="username" required></td>
+                        </tr>
+                        <tr>
+                            <th>PASSWORD : </th>
+                            <td><input type="text" name="password" placeholder="password" required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" value="Login" ></td>
+                        </tr>
+                    </table>
+                </form>
+
+
+
+            </div>
+        </div>
+
+</body>
+<% include partials/script %>
+
+</html>
